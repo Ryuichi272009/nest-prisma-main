@@ -1,5 +1,5 @@
 {
-  "options": {
+  "build": {
     "secrets": []
   }
 }
