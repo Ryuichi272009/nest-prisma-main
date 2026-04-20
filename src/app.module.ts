@@ -11,10 +11,7 @@ import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [PrismaModule, StudentsModule, BookModule, PeminjamanModule, PengembalianModule, AuthModule,
-    ConfigModule.forRoot({isGlobal:true, envFilePath:
-      process.env.NODE_ENV === 'production' ?
-      '.env.production' :
-      '.env'})],
+    ConfigModule.forRoot({ isGlobal: true })],
   controllers: [AppController],
   providers: [AppService],
 })
